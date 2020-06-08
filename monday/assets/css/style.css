@@ -54,3 +54,8 @@ thead tr th{
 	border:1px solid  #5a5a5a;
 	background-color: #5a5a5a;
 }
+
+.jumbotron{
+	color:#fff;
+	background-color: yellow;
+}
