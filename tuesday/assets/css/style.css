@@ -113,6 +113,16 @@ thead tr th{
 }
 /**************
 
+	TUESDAY SPECIFIC
+
+***********************/
+
+.hidden-image{
+	display: none;
+}
+
+/**************
+
 	COMMON FOOTER
 
 ***********************/

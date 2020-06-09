@@ -25,3 +25,17 @@ let displayFooterContent = () =>{
 	"Copyright &copy; "+currentYear+". All Rights Reserved.</center>";
 	document.getElementById(projectFooter).innerHTML+=content;
 }
+
+/****************
+
+	JQUERY SAMPLES
+
+***********************/
+$('h1').click( () => {
+  alert("This is a heading tag")
+});
+
+$('p').click(()=> {
+	$(".hide-image").toggle();
+  $(".hidden-image").toggle();
+});
