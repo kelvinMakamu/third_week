@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Third Week - Monday Practice Exercises</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -26,18 +27,104 @@
 	<div class="container exercise-content-holder">
 		<div class="row">
 				<div class="col-md-5 col-lg-5 col-sm-12 exercise-content">
-					<h3 class="exercise-content-third-heading">CHECK AKAN NAME</h3>
+					<h3 class="exercise-content-third-heading">Grocery List</h3>
 					<hr>
+					<form>
+						<div class="row">
+							<div class="col-md-12 col-lg-12 col-sm-12">
+								<p class="exercise-content-instruction">
+									Please provide your grocery list items separated with comas
+								</p>
+							</div>
+						</div>
+						<div class="row">
+								<div class="col-md-12 col-lg-12 col-sm-12">
+									<div class="form-group">
+										<textarea class="form-control" id='grocery-list-items'></textarea>
+									</div>
+								</div>
+						</div>
+						<br/>
+						<div class="row">
+							<div class="col-md-5 col-lg-5 col-sm-12">
+								<button type="button" class="btn btn-dflt" onclick="clearGroceryList()">Clear List</button>
+							</div>
+							<div class="col-md-7 col-lg-7 col-sm-12 pull-right">
+								<button type="button" class="btn btn-success" onclick="displayGroceryList()">
+								Grocery List</button>
+							</div>
+							<div class="col-md-12 col-lg-12 col-sm-12">
+								<div id="grocery-list-message"></div>
+							</div>
+						</div>
+						</form>
 				</div>
 				<div class="col-md-5 col-lg-5 col-sm-12 exercise-content">
-					<h3 class="exercise-content-third-heading">CHECK AKAN NAME</h3>
+					<h3 class="exercise-content-third-heading">WORD PLAY</h3>
 					<hr>
+					<form>
+						<div class="row">
+							<div class="col-md-12 col-lg-12 col-sm-12">
+								<p class="exercise-content-instruction">
+									Please provide a sentence
+								</p>
+							</div>
+						</div>
+						<div class="row">
+								<div class="col-md-12 col-lg-12 col-sm-12">
+									<div class="form-group">
+										<textarea class="form-control" id='word-play-items'></textarea>
+									</div>
+								</div>
+						</div>
+						<br/>
+						<div class="row">
+							<div class="col-md-5 col-lg-5 col-sm-12">
+								<button type="button" class="btn btn-dflt" onclick="clearWordPlay()">Clear</button>
+							</div>
+							<div class="col-md-7 col-lg-7 col-sm-12 pull-right">
+								<button type="button" class="btn btn-success" onclick="wordPlay()">
+								Word Play</button>
+							</div>
+							<div class="col-md-12 col-lg-12 col-sm-12">
+								<div id="word-play-message"></div>
+							</div>
+						</div>
+						</form>
 				</div>
+			</div>
+		<br>
+		<div class="row">
+				<div class="col-md-5 col-lg-5 col-sm-12 exercise-content">
+					<h3 class="exercise-content-third-heading">Card Deck</h3>
+					<hr>
+					<form>
+						<div class="row">
+							<div class="col-md-12 col-lg-12 col-sm-12">
+								<div id="card-deck-suits"></div>
+								<div id="card-deck-ranks"></div>
+							</div>
+							<div class="col-md-5 col-lg-5 col-sm-12">
+								<button type="button" class="btn btn-dflt" onclick="clearCardDeck()">Clear</button>
+							</div>
+							<div class="col-md-7 col-lg-7 col-sm-12 pull-right">
+								<button type="button" class="btn btn-success" onclick="buildCardDeck()">
+								Card Deck</button>
+							</div>
+							<div class="col-md-12 col-lg-12 col-sm-12">
+								<div id="card-deck-message"></div>
+							</div>
+						</div>
+						</form>
+				</div>
+		</div>
+		</div>
 		</div>
 	</div>
 	<!-- FOOTER -->
 	<div class="project-footer" id="project-footer"></div>
 	<script type="text/javascript" src="assets/js/script.js"></script>
 	<script type="text/javascript">displayFooterContent();</script>
+	<script type="text/javascript">displayCardDeckInfo();</script>
 </body>
 </html>

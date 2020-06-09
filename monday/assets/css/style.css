@@ -28,6 +28,21 @@ thead tr th{
 	text-transform: uppercase;
 }
 
+textarea {
+  resize: none;
+}
+
+.alert{
+	margin:3% 0% 0% 0%;
+	padding:3% 3% 3% 3%;
+}
+
+.alert p{
+	line-height: 25px;
+	margin-top:2%;
+	text-transform: uppercase;
+}
+
 .container{
 	margin:5% 0% 2.5% 0%;
 }
@@ -110,6 +125,25 @@ thead tr th{
 	font-size:18px;
 	font-weight: bold;
 	text-align: center;
+}
+
+.exercise-content form{
+	padding: 2% 5% 2% 5%;
+}
+
+.exercise-content-instruction{
+	font-weight: bold;
+	margin-top: -2%;
+	margin-left: 2.5%;
+	margin-bottom: 7.5%;
+}
+
+#card-deck-suits,#card-deck-ranks{
+	margin-bottom: 5%;
+}
+
+.card-deck-spacer{
+	margin-right:2%;
 }
 /**************
 
