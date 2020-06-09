@@ -1,0 +1,124 @@
+*{
+	margin:0;
+	letter-spacing: 2px;
+	border-radius: 0% !important;
+	font-family: 'Roboto', sans-serif;
+}
+
+small{
+	color:#DB4437 !important;
+	margin-top:1%;
+}
+
+body{
+	background-color: #ededed !important;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+	color:#45A29E;
+	text-transform: uppercase;
+}
+
+hr{
+	margin-bottom: 5%;
+}
+
+thead tr th{
+	color:#45A29E !important;
+	text-transform: uppercase;
+}
+
+.container{
+	margin:5% 0% 2.5% 0%;
+}
+
+.form-control{
+	border:0px !important;
+	border-bottom: 2px solid #dedede !important;
+}
+
+.form-control:focus,.form-control:hover{
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+	border-bottom: 2px solid #0F9D58 !important;
+}
+
+.btn{
+	text-transform: uppercase;
+}
+
+.btn-success,.btn-success:focus,.btn-success:hover{
+	border:1px solid  #45A29E;
+	background-color: #45A29E;
+	margin-left: 15%;
+}
+
+.btn-dflt,.btn-dflt:focus,.btn-dflt:hover{
+	color:#fff;
+	border:1px solid  #5a5a5a;
+	background-color: #5a5a5a;
+}
+
+/*****************
+
+	EXERCISE STYLES
+
+*********************/
+
+.jumbotron{
+	color:#fff;
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.78),
+      rgba(0, 0, 0, 0.78)
+    ),url('../../assets/images/background.jpg');
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container .row{
+	padding: 3% 3% 3% 3%;
+}
+
+.week-main-name{
+	font-size:25px;
+}
+
+.week-description{
+	padding:2% 25% 0% 25%;
+}
+
+.week-description p{
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+
+.exercise-content-holder{
+	margin: 3% 3% 3% 5%;
+	padding:3% 2% 2% 2%;
+	background-color: #fff !important;
+}
+
+.exercise-content{
+	margin:0% 2% 0% 4.5%;
+	padding:2% 2% 2% 2%;
+	border: 2px solid #dedede;
+	box-shadow: 0px 2px 3px #dedede;
+}
+
+.exercise-content-third-heading{
+	font-size:18px;
+	font-weight: bold;
+	text-align: center;
+}
+/**************
+
+	COMMON FOOTER
+
+***********************/
+.project-footer{
+	color:#FFF;
+	padding:3% 2% 2% 2%;
+	background-color: #5a5a5a;
+	text-transform: uppercase;
+}
