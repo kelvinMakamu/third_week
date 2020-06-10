@@ -26,7 +26,7 @@ const concepts=[
 	{'name':'comments','desc':'represents textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view'},
 	{'name':'jquery','desc':'a JavaScript Library that focuses on simplifying DOM manipulation, AJAX calls, and Event handling.'},
 	{'name':'attributes','desc':'attributes extends tags, changing their behavior or providing metadata.'},
-]
+];
 
 /***********
 	
@@ -86,13 +86,13 @@ let displayJavaScriptTerms = () => {
 	});
 	document.getElementById(termsContainer).innerHTML+=content;
 }
-/*************************
+/*****************************
 	
-	APPEND ONCLICK EVENT ONCE 
+	APPEND ON CLICK EVENT ONCE 
 
 	EVERYTHING HAS LOADED
 
-****************************/
+*******************************/
 $(document).ready(()=>{
 	concepts.forEach((concept)=>{
 			let conceptID=(concept.name.toLowerCase().split(' ').map((word)=> word).join('-'));
