@@ -113,28 +113,6 @@ thead tr th{
 }
 /**************
 
-	TUESDAY SPECIFIC
-
-***********************/
-
-.hidden-image{
-	display: none;
-}
-
-.bg-green{
-	background-color: green !important;
-}
-
-.bg-yellow{
-	background-color: yellow !important;
-}
-
-.bg-red{
-	background-color: red !important;
-}
-
-/**************
-
 	COMMON FOOTER
 
 ***********************/

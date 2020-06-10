@@ -31,11 +31,45 @@ let displayFooterContent = () =>{
 	JQUERY SAMPLES
 
 ***********************/
-$('h1').click( () => {
-  alert("This is a heading tag")
-});
+	$('h1').click( () => {
+	  alert("This is a heading tag")
+	});
 
-$('p').click(()=> {
-	$(".hide-image").toggle();
-  $(".hidden-image").toggle();
-});
+	$('p').click(()=> {
+		$(".hide-image").slideToggle();
+	  $(".hidden-image").slideToggle();
+	});
+
+	let changeBackgroundColor = (color_type) => {
+		$('body').removeClass();
+		$('body').addClass(color_type);
+	}
+
+	$('#green').click(()=>{
+		changeBackgroundColor('bg-green');
+	});
+
+	$('#yellow').click(()=>{
+		changeBackgroundColor('bg-yellow');
+	});
+
+	$('#red').click(()=>{
+		changeBackgroundColor('bg-red');
+	});
+
+	$('#hello').click( ()=>{
+		$("ul").prepend("<li>Hello World!</li>");
+	});
+
+	$("#goodbye").click(()=>{
+		$("ul").prepend("<li>Goodbye !!!</li>");
+	});
+
+	$("#stop").click(()=>{
+		$("ul#webpage").prepend("<li>Stop Copying Me!!!</li>");
+		$('li').css('background-color', 'green');
+	});
+
+	$("ul#webpage").children("li").first().click(()=>{
+		$(this).remove();
+	});
