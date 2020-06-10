@@ -23,7 +23,7 @@ const concepts=[
 	{'name':'NaN','desc':'a value representing Not-A-Number'},
 	{'name':'Escape','desc':' function that computes a new string in which certain characters have been replaced by a hexadecimal escape sequence.'},
 	{'name':'Alert','desc':'method displays an alert dialog with the optional specified content and an OK button.'},
-	{'name':'comments','desc':'epresents textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view'},
+	{'name':'comments','desc':'represents textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view'},
 	{'name':'jquery','desc':'a JavaScript Library that focuses on simplifying DOM manipulation, AJAX calls, and Event handling.'},
 	{'name':'attributes','desc':'attributes extends tags, changing their behavior or providing metadata.'},
 ]
