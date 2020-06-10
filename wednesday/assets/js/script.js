@@ -103,11 +103,11 @@ $(document).ready(()=>{
 
 let toggleTermsDefinition = (conceptID,definitionID) =>{
 	$("#"+conceptID).click(function(){
-	 	$("#"+conceptID).toggle();
-	 	$("#"+definitionID).toggle();
+	 	$("#"+conceptID).slideToggle();
+	 	$("#"+definitionID).slideToggle();
 	});
 	$("#"+definitionID).click(function(){
-	 	$("#"+conceptID).toggle();
-	 	$("#"+definitionID).toggle();
+	 	$("#"+conceptID).slideToggle();
+	 	$("#"+definitionID).slideToggle();
 	});
 }
