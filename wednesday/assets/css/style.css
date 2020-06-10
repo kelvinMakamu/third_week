@@ -111,6 +111,32 @@ thead tr th{
 	font-weight: bold;
 	text-align: center;
 }
+
+#javascript-terms{
+	padding:2% 2% 2% 2%;
+}
+
+.js-concepts{
+	font-weight: 600;
+	margin-bottom: 3%;
+	cursor: pointer;
+}
+
+.definition-container{
+	display: none;
+	cursor: pointer;
+	padding:5% 5% 5% 5%;
+	border:1px solid #dedede;
+	box-shadow:0px 2px 3px #dedede;
+}
+
+.definition-container:hover{
+	color:#fefefe;
+	border-radius: 5%;
+	background-color: #ff7373;
+	border:1px solid #ff7373;
+	box-shadow:0px 2px 3px #ff7373;
+}
 /**************
 
 	COMMON FOOTER
