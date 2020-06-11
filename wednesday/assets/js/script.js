@@ -102,12 +102,26 @@ $(document).ready(()=>{
 });
 
 let toggleTermsDefinition = (conceptID,definitionID) =>{
-	$("#"+conceptID).click(function(){
+	$("#"+conceptID).click(() =>{
 	 	$("#"+conceptID).slideToggle();
 	 	$("#"+definitionID).slideToggle();
 	});
-	$("#"+definitionID).click(function(){
+	$("#"+definitionID).click(() =>{
 	 	$("#"+conceptID).slideToggle();
 	 	$("#"+definitionID).slideToggle();
 	});
 }
+
+$(document).ready(()=> {
+    $("#blanks form").submit((event) => {
+        $(".person1").append($("input#person1").val());
+        $(".person2").append($("input#person2").val());
+        $(".animal").append($("input#animal").val());
+        $(".exclamation").append($("input#exclamation").val());
+        $(".verb").append($("input#verb").val());
+        $(".noun").append($("input#noun").val());
+
+        $("#story").show();
+        event.preventDefault();
+    });
+});
